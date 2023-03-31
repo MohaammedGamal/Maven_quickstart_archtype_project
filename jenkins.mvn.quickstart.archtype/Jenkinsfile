@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Maven install') {
         steps {
-          withMaven(globalMavenSettingsConfig: '--- Use system default settings or file path ---', jdk: 'JDK installtion', maven: 'Maven', mavenSettingsConfig: 'de015ca0-a0d2-485c-9560-340bc00a314c') {
+          withMaven(globalMavenSettingsConfig: '0fc650ac-827a-4397-9b71-131500963c54', jdk: 'JDK installtion', maven: 'Maven', mavenSettingsConfig: 'de015ca0-a0d2-485c-9560-340bc00a314c') {
             sh 'mvn clean install'
           }
         }
